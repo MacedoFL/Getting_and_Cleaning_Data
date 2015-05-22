@@ -63,9 +63,6 @@ Here is a list describing all analysis steps sequentially:
 - Bind all rows of test_data and train_data into all_data.
 - Aggregate all_data calculating the mean for all included features by subject/activity combination into agg_data.
 - Prefix the name of all feature columns in agg_data with "mean_of_".
-
-
-
-
-
-
+- Order the rows in agg_data by subject and activity and assign the result to agg_data_m.
+- Remove row names from agg_data_m.
+- Save agg_data_m to a file named "Subject_Mean_Activity.txt".
